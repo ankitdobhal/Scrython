@@ -2,7 +2,9 @@
 # For safety it's reccommended that you save the token as a variable
 # in another file; in this case BotUtils.py
 
-import scrython, BotUtils, asyncio
+import scrython
+import BotUtils
+import asyncio
 from discord.ext import commands
 
 bot = commands.Bot(description='FetchBot', command_prefix="?")
