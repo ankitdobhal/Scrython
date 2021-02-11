@@ -51,9 +51,8 @@ class FoundationObject(object):
         if key not in self.scryfallJson:
             raise KeyError('This card has no key \'{}\''.format(key))
 
-        if nested_key:
-            if nested_key not in self.scryfallJson[key]:
-                raise KeyError('This card has no key \'{}.{}\''.format(key, nested_key))
+        if nested_key and if nested_key not in self.scryfallJson[key]:
+        	raise KeyError('This card has no key \'{}.{}\''.format(key, nested_key))
 
 
     def _checkForTupleKey(self, parent, num, key):
